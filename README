@@ -1,12 +1,10 @@
 NOTE: I've made my patched version of dwm public here for convenience's 
-sake - it's just my own personal set up, I have no idea if it will build
-or function as-is on whatever *BSD or Linux distro you're using. I'm on
-FreeBSD12.0-RELEASE and made several changes to config.mk in regards to 
-that so you'll at least want to look there. Transparency needs a compositor 
-of some sort running to work - I use Compton, no idea if whatever you use 
-will work right. Needs lots of header files and such to build as well, and 
-I don't know what off the top of my head so just make clean install and then 
-see what it bitches about.
+sake - use it if you want but it's only really here for my pesonal 
+convenience so don't yell at me if it doesn't work on your machine for
+whatever random reason.
+
+every patch that's been applied is in the patches directory, have a look
+there if you want to know what all has been done.
 
 dwm - dynamic window manager
 ============================

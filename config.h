@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
-/* include push */
+/* include some patches that are like this for some reason */
+#include "zoomswap.c"
 #include "push.c"
 
 /* appearance */

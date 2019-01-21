@@ -10,7 +10,10 @@ static const unsigned int gappx	    = 15;       /* gap size in pixels */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "termsyn:size=10" };
+static const char *fonts[] = {
+    "Siji:size=12",
+    "Termsyn:size=12"
+};
 static const char dmenufont[]       = "termsyn:size=10";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";

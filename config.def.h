@@ -16,7 +16,7 @@ static const char *fonts[] = {
 };
 static const char dmenufont[]       = "termsyn:size=10";
 static const char col_gray1[]       = "#000000";
-static const char col_gray2[]       = "#444444";
+static const char col_gray2[]       = "#111111";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#688891";
@@ -24,12 +24,12 @@ static const char col_black[]       = "#000000";
 static const char col_red[]	    = "#ff0000";
 static const char col_yellow[]      = "#ffff00";
 static const char col_white[]	    = "#ffffff";
-static const unsigned int baralpha = 0xc0;
+static const unsigned int baralpha = 0xFF;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray1,  col_gray2  },
+	[SchemeSel]  = { col_white, col_gray1,  col_gray1  },
 	[SchemeWarn] = { col_red, col_gray1, col_gray2 },
 	[SchemeUrgent] = { col_white, col_red, col_gray2},
 };
@@ -40,7 +40,7 @@ static const unsigned int alphas[][3]	= {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { " ", " ", " ", " " };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -58,12 +58,12 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "TTT",      bstack }, 
-	{ "[M]",      monocle },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
+	{ "  ",      tile },    /* first entry is default */
+	{ "  ",      NULL },    /* no layout function means floating behavior */
+	{ "  ",      bstack }, 
+	{ "  ",      monocle },
+	{ "  ",      centeredmaster },
+	{ "  ",      centeredfloatingmaster },
 };
 
 /* key definitions */

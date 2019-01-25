@@ -6,7 +6,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx	    = 5;       /* gap size in pixels */
+static const unsigned int gappx	    = 15;       /* gap size in pixels */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -16,7 +16,7 @@ static const char *fonts[] = {
 };
 static const char dmenufont[]       = "termsyn:size=10";
 static const char col_gray1[]       = "#000000";
-static const char col_gray2[]       = "#111111";
+static const char col_gray2[]       = "#3B3B3B";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#688891";
@@ -27,7 +27,7 @@ static const char col_white[]	    = "#ffffff";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_white, col_gray1,  col_white  },
+	[SchemeSel]  = { col_white, col_gray2,  col_white  },
 	[SchemeWarn] = { col_red, col_gray1, col_gray2 },
 	[SchemeUrgent] = { col_white, col_red, col_gray2},
 };
@@ -55,7 +55,7 @@ static const Layout layouts[] = {
 	{ "[]",      NULL },    /* no layout function means floating behavior */
 	{ "[]",      bstack }, 
 	{ "[]",      monocle },
-	{ "[ ]",      centeredmaster },
+	{ "[]",      centeredmaster },
 	{ "[]",      centeredfloatingmaster },
 };
 
